@@ -44,7 +44,7 @@ Our application is available through your browser using this <a href="http://loc
 
 <h2>Video Sources Editing</h2>
 
-![Screenshot](images/03_video_sources.png)
+![Screenshot](images/03_video_settings.png)
 
 <h2>Live Preview</h2>
 
