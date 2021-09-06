@@ -1,0 +1,10 @@
+global:
+  ava:
+    memory: "2046Mi"
+    version: 0.0.1
+    port: 8080
+    license:
+      url: "https://float-license-dev.inreality.com/"
+      account: ""
+      api_key: ""
+      license_key: ""
