@@ -32,4 +32,24 @@ Our application is available through your browser using this <a href="http://loc
 | account       | wlSTH9iXZKDg8NggJJ0000                       | Request. |
 | api_key       | ei2A4oR-YkL1Z73Z68wDA5WJBW6yUffEPE2eeeeqqes  | Request. |
 | license_key   | Fn04W-nSt66UTMZj6WyFyueIUZZLwDO0Npmgym8yzXc  | Request. |
- 
+<h1>Screenshots</h1>
+<h2>Entry Page</h2>
+
+![Screenshot](images/01_entry.png)
+
+
+<h2>Video Source</h2>
+
+![Screenshot](images/02_video_sources.png)
+
+<h2>Video Sources Editing</h2>
+
+![Screenshot](images/03_video_sources.png)
+
+<h2>Live Preview</h2>
+
+![Screenshot](images/04_live_preview.png)
+
+
+
+
