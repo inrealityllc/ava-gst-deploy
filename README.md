@@ -1,3 +1,7 @@
+```text
+SPDX-License-Identifier: Apache-2.0
+Copyright (c) 2021 InReality LLC
+```
 <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQG5Q1SR05amJg/company-logo_200_200/0/1519901343043?e=1639008000&v=beta&t=76nSvaqAh7_T8o4cwAzYvBvE6w095KSFtXo1iTQHB-M" 
      alt="AVA-GST by InReality LLC" width="120">
 <h1>InReality DLAV</h1>
@@ -8,6 +12,36 @@ InReality's Deep Learning Anonymous Analytics Engine helps companies with their 
 Now DLAV is more accessible than ever by making it available through Intel's OpenNess platform. You just have to use the helm chart provided to deploy our DLAV into your own environment.
 </p>
 <h1>Techical Details</h1>
+
+## **Pre Requisites – Resources Required**
+
+| **Resource Information**           |                      |
+|------------------------------------|----------------------|
+| Application Type                   | Video-Analytics		| 
+| Compute  (vCores)                  | 8                    |  
+| Memory (RAM)                       | 16 GB                |  
+| Storage 				       | 100  GB              |  
+| Host OS                            | CentOS 7.6.1810      | 
+  
+## **Where to Purchase**
+Contact sales@inreality.com
+
+
+## Pre Requisites - Installing OpenNESS
+|**Configuration**                   |                       |
+|  ----------------------------------|-----------------------|
+| OpenNESS Version                   | 20.12.02		         |
+| Flavor Used 					     | media-analytics			 |
+| Distribution						 | IDO    	     |
+
+
+Follow below link to setup controller and edge-node for installing OpenNESS.
+
+https://github.com/open-ness/specs/blob/openness-20.12.02/doc/getting-started/network-edge/controller-edge-node-setup.md
+
+* Go to openness-experience-kits/ directory and comment out the grub role (role: machine_setup/grub) in the **network_edge.yml** file.
+* Run the deployment script as ./deploy_ne.sh 
+
 <h2>Docker Image</h2>
 <p>
 The base image is available at dockerhub <a href="https://hub.docker.com/r/irllc/ava-gst">https://hub.docker.com/r/irllc/ava-gst</a>. This is a public image made available by InReality LLC.
@@ -16,10 +50,57 @@ The base image is available at dockerhub <a href="https://hub.docker.com/r/irllc
 Do take note that you would need a license from InReality LLC in order to run this image successfully. 
 You can contact us at <a href="mailto:sales@inreality.com?">Sales at InReality</a> to request for you license today.
 </p>
+
+
+## Loading Docker Images
+In case of requirement to "pre-pull" the docker container images onto the edge nodes, the partner needs to provide information here. 
+To obtain the application image please go to
+https://xxxxxxxxxxxxxx.
+Once available and copied to the edge nodes, the application container images can be loaded using the following commands:
+
+docker load -i xxxxxxx.tar.gz
+
 <h2>Helm Chart</h2>
 <P>
 Helm chart is also available for easier deployment. The helm chart is available at our <a href="https://github.com/inrealityllc/ava-gst-deploy">Github Repository</a>.
 </P>
+
+## Installing <application name> using helm
+
+Run the following commands to deploy  through helm:
+
+`helm install xxxxxx`
+
+ Sample Output would look like:
+
+> `helm install xxxxxxxxxxxxx`
+>
+> `NAME: <Application Name>`
+>
+> `LAST DEPLOYED: XXXXXX`
+>
+> `NAMESPACE: default`
+>
+> `STATUS: deployed`
+>
+> `REVISION: 1`
+>
+> `NOTES:`
+>
+> `<Application Name> installed`	
+
+
+## Uninstall <application name> application
+To uninstall application run below command:
+
+helm delete xxxxxxxx
+
+## Testing Steps
+For further instructions about steps for testing, contact us (dev@inreality.com)
+
+## **Related material**
+* https://www.inreality.com/
+     
 <h2>Application Information</h2>
 Our application is available through your browser using this <a href="http://localhost:8080/">local web page link</a>. Click on this link after you ran your Helm Chart successfully.
 <br />
@@ -32,6 +113,8 @@ Our application is available through your browser using this <a href="http://loc
 | account       | wlSTH9iXZKDg8NggJJ0000                       | Request. |
 | api_key       | ei2A4oR-YkL1Z73Z68wDA5WJBW6yUffEPE2eeeeqqes  | Request. |
 | license_key   | Fn04W-nSt66UTMZj6WyFyueIUZZLwDO0Npmgym8yzXc  | Request. |
+
+
 <h1>Screenshots</h1>
 <h2>Entry Page</h2>
 
