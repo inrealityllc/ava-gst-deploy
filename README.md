@@ -69,15 +69,15 @@ Helm chart is also available for easier deployment. The helm chart is available 
 
 Run the following commands to deploy  through helm:
 
-`helm install xxxxxx`
+`helm install ava-gst ./deploy/`
 
  Sample Output would look like:
 
-> `helm install xxxxxxxxxxxxx`
+> `helm install ava-gst ./deploy/`
 >
-> `NAME: <Application Name>`
+> `NAME: ava-gst`
 >
-> `LAST DEPLOYED: XXXXXX`
+> `LAST DEPLOYED: Wed Sep  8 00:39:50 2021`
 >
 > `NAMESPACE: default`
 >
@@ -87,13 +87,13 @@ Run the following commands to deploy  through helm:
 >
 > `NOTES:`
 >
-> `<Application Name> installed`	
+> `ava-gst installed`	
 
 
 ## Uninstall <application name> application
 To uninstall application run below command:
 
-helm delete xxxxxxxx
+helm delete ava-gst
 
 ## Testing Steps
 For further instructions about steps for testing, contact us (dev@inreality.com)
